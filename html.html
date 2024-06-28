@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para a minha gata, morada dos meus sonhos</title>
+    <link rel="icon" type="image/png" href="https://imagepng.org/wp-content/uploads/2017/10/coracao-2.png">
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #ffcccc;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            color: #333;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative; /* Adicionado para posicionamento relativo */
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        section h2 {
+            color: #ff6699;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        section h3 {
+            color: #ff6699;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #ffcccc;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.8rem;
+        }
+
+        footer strong {
+            color: #ff0000;
+        }
+
+        .button {
+    width: 50px;
+    height: 50px;
+    left: 345px;
+    position: relative; /* Mudança para posição relativa */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    border-radius: 50%; /* Transforma em círculo */
+    background: none;
+    cursor: pointer;
+    transition: background 0.5s ease;
+    z-index: 999; /* Garante que esteja acima do conteúdo */
+}
+        .button-text {
+            position: absolute;
+            left: calc(50% + 25px);
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 0.9rem;
+            color: #666;
+            cursor: pointer;
+        }
+
+        #heart {
+            width: 100px;
+            height: 90px;
+            transition: background 0.5s ease;
+        }
+
+        #heart:before,
+        #heart:after {
+            transition: background 0.5s ease;
+            position: absolute;
+            content: "";
+            left: 50px;
+            top: 0;
+            width: 50px;
+            height: 80px;
+            background: rgb(255, 0, 0);
+            border-radius: 50px 50px 0 0;
+            transform: rotate(-45deg);
+            transform-origin: 0 100%;
+        }
+
+        #heart:after {
+            left: 0;
+            transform: rotate(45deg);
+            transform-origin :100% 100%;
+        }
+
+        .heart-link {
+            position: relative;
+            display: inline-block;
+            text-align: center;
+        }
+
+        /* Estilo para o GIF */
+        .gif {
+            position: absolute;
+            right: -30px; /* Ajusta a distância da direita */
+            top: 30%; /* Centraliza verticalmente */
+            transform: translateY(-50%);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Para a minha gata, morada dos meus sonhos</h1>
+    </header>
+    <main>
+        <section id="intro">
+            <h2>Lu,</h2>
+            <p>Oce sabe que eu te amo muito, demais da conta sô, para demonstrar meu amor por você fiz um site só com razôes de porque eu te amo.</p>
+        </section>
+        <section id="reasons">
+            <h2>Razões pelas quais eu te amo</h2>
+            <ul>
+                <li>É linda demais da conta.</li>
+                <li>É muito inteligente e dedicada.</li>
+                <li>Você tem uma fé linda e ama muito Jesus <em>(acho lindo demais isso)</em>.</li>
+                <li>É cheirosa <em>(Nunca te falei, mas seu cheiro é bãoooo demais) </em>.</li>
+                <li>É muito educada</li>
+                <li>Gente boa demaissss</li>
+                <li>Ouve as miores musicas que tem e tem bom gosto pra tudo</li>
+                <li>Tem um cabelo extremamente bunito</li>
+                <li>É perfeita em tudo</li>
+                <li>Melhor parte do meu dia é conversar com você</li>
+                <li>Seu sorriso</li>
+                <li>O seu jeitinho de ser</li>
+                <li>Mais fácil falar logo, num tem nada que eu não ame em você, simplesmente amo TUDO</li>
+            </ul>
+        </section>
+        <section id="promise">
+            <h3>VOCÊ É A MELHOR MENINA QUE JA CONHECI, TE AMO LU</h3>
+            <p>Eu prometo te amar todos os dias até que a morte nos separe.</p>
+            <!-- Botão de coração com redirecionamento para o YouTube -->
+            <a href="https://youtu.be/0dLX40UMUKo?si=c37Kcq85zZb_Gy5w" target="_blank" class="heart-link">
+                <div id='heart' class='button'></div>
+            </a>
+            
+            <h4 style="text-align: center; color: #666; margin-top: 10px; height: 50px;">Clique no coração</h4>
+            <!-- GIF na lateral direita -->
+            <img src="https://gifman.net/wp-content/uploads/2019/06/ursinho-fofo-apaixonado.gif" alt="GIF fofo" class="gif">
+        </section>
+    </main>
+
+    <!-- Script para animação do botão de coração -->
+    <script src="https://cdn.jsdelivr.net/npm/mo-js@0.288.2/dist/mo.min.js"></script>
+    <script>
+        $( document ).ready(function() {
+            var scaleCurve = mojs.easing.path('M0,100 L25,99.9999983 C26.2328835,75.0708847 19.7847843,0 100,0');
+            var el = document.querySelector('.button'),
+                // mo.js timeline obj
+                timeline = new mojs.Timeline(),
+
+                // tweens for the animation:
+                // burst animation
+                tween1 = new mojs.Burst({
+                    parent: el,
+                    radius: { 0: 100 },
+                    angle: { 0: 45 },
+                    y: -10,
+                    count: 10,
+                    radius: 100,
+                    children: {
+                        shape: 'circle',
+                        radius: 30,
+                        fill: ['red', 'white'],
+                        strokeWidth: 15,
+                        duration: 500,
+                    }
+                });
+
+            tween2 = new mojs.Tween({
+                duration: 900,
+                onUpdate: function(progress) {
+                    var scaleProgress = scaleCurve(progress);
+                    el.style.WebkitTransform = el.style.transform = 'scale3d(' + scaleProgress + ',' + scaleProgress + ',1)';
+                }
+            });
+
+            tween3 = new mojs.Burst({
+                parent: el,
+                radius: { 0: 100 },
+                angle: { 0: -45 },
+                y: -10,
+                count: 10,
+                radius: 125,
+                children: {
+                    shape: 'circle',
+                    radius: 30,
+                    fill: ['white', 'red'],
+                    strokeWidth: 15,
+                    duration: 400,
+                }
+            });
+
+            // add tweens to timeline:
+            timeline.add(tween1, tween2, tween3);
+
+            // when clicking the button start the timeline/animation:
+            $(".button").click(function() {
+                if ($(this).hasClass('active')) {
+                    $(this).removeClass('active');
+                } else {
+                    timeline.play();
+                    $(this).addClass('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
